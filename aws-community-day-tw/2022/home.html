@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Community Day Taiwan | 2022 AWS 台灣社群年會</title>
+    <!-- favicon.io -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/others/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/others/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/others/favicon-16x16.png">
+    <link rel="manifest" href="./images/others/site.webmanifest">
+    <link rel="mask-icon" href="./images/others/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="./images/others/favicon.ico" />
+    <!-- OpenGraph -->
+    <!-- <meta property="og:url" content="https://communityday.awsugblr.in" />  -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="AWS Community Day Taiwan 2022" />
+    <meta property="og:description"
+        content="AWS Community Day Taiwan 是一場從活動規劃、籌備到實踐，全由社群領袖發起的交流活動。活動將邀請來自 AWS 的全球用戶的專家與產業領導，透過技術交流、研討會及工作坊，彼此相互交流與學習，同時讓開發人員了解與認識 AWS 的最新技術與最佳實踐。" />
+    <!-- <meta property="og:image" content="https://communityday.awsugblr.in/images/community-day-logo-sq.png" /> -->
+    <!-- <meta property="og:image:secure_url" content="https://communityday.awsugblr.in/images/community-day-logo-sq.png" /> -->
+    <!-- Package -->
+    <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/site.js"></script>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="stylesheet" href="./stylesheets/mystyles.css">
+</head>
+
+<body>
+    <div id="page">
+        <!-- Home Banner/Menu Area -->
+        <div class="section section-1 hdr" id="home">
+            <div class="content">
+                <div class="container">
+                    <div>
+                        <div wid="50%" class="left">
+                            <div class="left_in">
+                                <img src="./images/others/logo.png" />
+                                <div class="txt">
+                                    <h4 class="headin-ttl">
+                                        2022 年 09 月 30 日 <br> 臺北方舟 ARK
+                                    </h4>
+                                    <p>
+                                        AWS Community Day Taiwan 是一場從活動規劃、籌備到實踐，全由社群領袖發起的交流活動。
+                                        活動將邀請來自 AWS 的全球用戶的專家與產業領導，透過技術交流、研討會及工作坊，彼此相
+                                        互交流與學習，同時讓開發人員了解與認識 AWS 的最新技術與最佳實踐。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div wid="50%" class="right">
+                            <div class="gal flex-it col">
+                                <div class="top f1 flex-it">
+                                    <div class="f2 ims im1"></div>
+                                    <div class="f1 ims im2"></div>
+                                </div>
+                                <div class="bot f1 flex-it">
+                                    <div class="f1 ims im3"></div>
+                                    <div class="f2 flex-it col">
+                                        <div class="f1 flex-it">
+                                            <div class="f1 ims im4"></div>
+                                            <div class="f1 ims im5"></div>
+                                        </div>
+                                        <div class="f1 ims im6"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right_in">
+                                <p class="awsugblr_logo">
+                                    <img src="./images/others/awsug-tw.png" />
+                                </p>
+                                <p class="enlarge">
+                                    <br>
+                                    史無前例，首届屬於 AWS 社群愛好者的年會
+                                </p>
+                                <button class="white icon-grp rt" id="link">
+                                    我想報名
+                                    <i class="icon large ion-md-play-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="nav-bar">
+                <p id="toggle"><span></span></p>
+                <li class="spec">
+                    <a class="buy-ticket-link button" href="https://awsugtw.kktix.cc/events/2022awscmdtw">我想報名</a>
+                </li>
+                <ul>
+                    <li>
+                        <a href="#com_info">關於 AWS Community Day</a>
+                    </li>
+                    <li>
+                        <a href="#agenda">活動議程</a>
+                    </li>
+                    <li>
+                        <a href="#venues">活動焦點</a>
+                    </li>
+                    <li>
+                        <a href="#sponsors">贊助企業</a>
+                    </li>
+                    <li>
+                        <a href="#speakers">講師陣容</a>
+                    </li>
+                    <li>
+                        <a href="#volunteers">志工團隊</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#subscribe" id="sub-button" class="sub-button">
+                            <i class="icon large ion-md-notifications-outline"></i>
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+        <!-- About Event Area -->
+        <div class="section section-2" id="about-event">
+            <div class="container flex-it">
+                <div class="f1 left" id="com_info">
+                    <div class="left_in">
+                        <h4 class="headin-ttl">
+                            我們是誰？
+                        </h4>
+                        <p>
+                            <b><a href="https://www.facebook.com/groups/286709044738947" target="_blank">AWS User Group
+                                    Taiwan</a> (AWSUG-Taiwan) </b>
+                            是一個位於臺北，由 AWS Hero、AWS Builder、AWSUG 志工夥伴三大角色組成的 AWS 社群愛好者組織，
+                            致力於 AWS 愛好者之雲端技術交流與分享，在不同產業的技術應用中達到最佳實踐的技術。
+                        </p>
+                        <p>
+                            AWS Community Day Taiwan 是一場從活動規劃、籌備到實踐，全由社群領袖發起的交流活動。活動將邀
+                            請來自 AWS 的全球用戶的專家與產業領導，透過技術交流、研討會及工作坊，彼此相互交流與學習，同時
+                            讓開發人員了解與認識 AWS 的最新技術與最佳實踐。
+                        </p>
+                        <p>
+                            歡迎所有產業主管、工程師、產品經理等參與每月由 AWSUG Taiwan 的交流會，或加入成爲志工或講師，
+                            讓 AWS 技術能夠賦能您所屬的產業情景。
+                        </p>
+                        <p>
+                            <div style="text-align: center;">
+                                <a href="https://www.facebook.com/groups/286709044738947" target="_blank">
+                                    <i class="fa fa-facebook" aria-hidden="true" style="font-size:250%;"></i> 
+                                </a>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+                <div class="f1 right" id="even_info">
+                    <div class="right_in">
+                        <h4>
+                            你爲何值得參與
+                            <br>
+                            AWS Community Day Taiwan
+                        </h4>
+                        <ul class="circle">
+                            <li class="circle_detail">
+                                <div class="feat_pic_area">
+                                    <img class="feat_pic" src="./images/others/person.png" alt="person">
+                                </div>
+                                <div class="feat_text_area">
+                                    與各領域專家學習
+                                    <br>
+                                    Peer-to-peer learning with local specialists
+                                </div>
+                            </li>
+                            <li class="circle_detail">
+                                <div class="feat_pic_area">
+                                    <img class="feat_pic" src="./images/others/trusted-advisor.png" alt="person">
+                                </div>
+                                <div class="feat_text_area">
+                                    拓展社群關係
+                                    <br>
+                                    Explore relationships with local technologist
+                                </div>
+                            </li>
+                            <li class="circle_detail">
+                                <div class="feat_pic_area">
+                                    <img class="feat_pic" src="./images/others/aws-services.png" alt="person">
+                                </div>
+                                <div class="feat_text_area">
+                                    獲得最新 AWS 技術秘辛
+                                    <br>
+                                    Gain insight on the latest topics and AWS services
+                                </div>
+                            </li>
+                            <li class="circle_detail">
+                                <div class="feat_pic_area">
+                                    <img class="feat_pic" src="./images/others/build-tools.png" alt="person">
+                                </div>
+                                <div class="feat_text_area">
+                                    獲得 AWS JAM 實作經驗
+                                    <br>
+                                    Gat hands-on experience with AWS JAM
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <br>
+                    <b>
+                        請詳讀 AWS Community Day Taiwan 的<a href="./code-of-conduct.html" target="_blank">活動條款</a>！
+                    </b>
+                </div>
+            </div>
+        </div>
+        <!-- Registration Area -->
+        <div class="section section-tickets text-center" id="ticktes">
+            <div class="container">
+                <h4 class="main-heading-ttl text-center">好禮領不完</h4>
+                <div class="row flex-it">
+                    <div class="col-md-3">
+                        <div class="card tick_conf with_icon border">
+                            <h4 class="heading-ttl">亞馬遜智慧音箱第 4 代</h4>
+                            <br>
+                            <div class="bg_img"></div>
+                            <p>有機會於 AWS JAM, 空間小游戲中獲得</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card tick_work_1 with_icon border dark">
+                            <h4 class="heading-ttl">精美筆記組合</h4>
+                            <br>
+                            <div class="bg_img"></div>
+                            <p>活動參加禮</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <div class="card tick_work_2 with_icon border">
+                            <h4 class="heading-ttl">露營燈</h4>
+                            <br>
+                            <div class="bg_img"></div>
+                            <p>有機會於空間小游戲中獲得</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <div class="card combo with_icon border dark">
+                            <h4 class="heading-ttl">AWS 證照折價券（5 折）</h4>
+                            <br>
+                            <div class="bg_img"></div>
+                            <p>有機會於空間小游戲中獲得</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="buy-wrapper row flex-it">
+                    <div class="f1">
+                        <a class="button large buy-ticket-link" style="text-decoration: none;" href="https://awsugtw.kktix.cc/events/2022awscmdtw">我想報名</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Venue Area -->
+        <div class="section section-3 inv" id="venues">
+            <div class="container">
+                <h4 class="main-heading-ttl text-center">活動焦點</h4>
+            </div>
+            <div class="container flex-it">
+                <div class="left f1 flex-it">
+                    <h4 class="headin-ttl">
+                        Venues
+                    </h4>
+                    <div class="left_in f1">
+                        <div id="map"></div>
+                    </div>
+                </div>
+                <div class="right f1">
+                    <div class="right_in">
+                        <div class="ven-1 ven active" data-lat="25.0492625" data-lng="121.5815909" data-label="Track C">
+                            <div class="rand_cls">
+                                <span class="date_ori">2022/09/30</span>
+                                <h4 class="headin-ttl">論壇</h4>
+                            </div>
+                            <ul>
+                                <li><b>Track B | AWS 雲端咖啡館</b></li>
+                                <li>AWS 雲端咖啡館是一個游戲化的互動形式，由 AWS Hero 與 AWS Builder 促進分享踩坑經驗的小組交流活動。</li>
+                                <li>-</li>
+                            </ul>
+                        </div>
+                        <div class="ven-2 ven" data-lat="25.0492625" data-lng="121.5815909" data-label="Track B">
+                            <div class="rand_cls">
+                                <span class="date_ori">2022/09/30</span>
+                                <h4 class="headin-ttl">競賽</h4>
+                            </div>
+                            <ul>
+                                <li><b>Track C | AWS JAM</b></li>
+                                <li>AWS JAM 是一個以遊戲化設計、高度互動、團隊合作為基礎建構的雲端技能實戰訓練活動。</li>
+                                <li>-</li>
+                            </ul>
+                        </div>
+                        <div class="marked"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Agenda Area -->
+        <div class="section section-4 inv" id="agenda">
+            <div class="container">
+                <h4 class="main-heading-ttl text-center" style="color: white;">活動議程</h4>
+            </div>
+            <div class="container">
+                <div class="sponsors">
+                    <div class="text-center agenda">
+                        <div class="table">
+                            <div class="thead">
+                                <div class="tr">
+                                    <div class="th idx">
+                                        <div>
+                                            <p>時間</p>
+                                        </div>
+                                    </div>
+                                    <div class="th">
+                                        <div>
+                                            <p>Track A</p>
+                                        </div>
+                                    </div>
+                                    <div class="th">
+                                        <div>
+                                            <p>Track B</p>
+                                        </div>
+                                    </div>
+                                    <div class="th">
+                                        <div>
+                                            <p>Track C</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tbody">
+                                <div class="tr last">
+                                    <div class="td" colspan="4">
+                                        <div>
+                                            <b>敬請期待 ！</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sponsors Area -->
+        <div class="section section-5" id="sponsors">
+            <div class="container">
+                <div class="sponsors">
+                    <h4 class="main-heading-ttl text-center">贊助企業</h4>
+                    <div class="cats">
+                        <div class="pltnm">
+                            <div class="flex-it">
+                                <div class="fhf">
+                                    <div class="head"><span>鉑金套餐</span></div>
+                                </div>
+                                <div class="f1">
+                                    <div class="aws">
+                                        <a href="https://aws.amazon.com/" target="_blank">Amazon Web Services</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gld">
+                            <div class="flex-it">
+                            </div>
+                        </div>
+                        <div class="slvr">
+                            <div class="flex-it">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Speakers Area -->
+        <div class="section-8" id="speakers">
+            <div class="container">
+                <div class="speakers">
+                    <h4 class="main-heading-ttl text-center">講師陣容</h4>
+                    <div class="spk_lst flex-it ">
+                        <div class="spk_itm_col">
+                            <div class="spk_itm flex-it">
+                                <div class="prod_im"><img style="transform:scale(2);position:absolute;top:10px;left:8px;" src="./images/speakers/amy-lee.jpg" alt="Amy Lee"></div>
+                                <div class="namenid">
+                                    <p>
+                                        <b>Amy Lee</b>
+                                        <br>
+                                        <small>Planner<br>@Feng Chia University</small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="spk_itm flex-it">
+                                <div class="prod_im"><img style="transform:scale(2);position:absolute;top:20px;" src="./images/speakers/neil-kuan.jpeg" alt="Neil Kuan"></div>
+                                <div class="namenid">
+                                    <p>
+                                        <b>Neil Kuan</b>
+                                        <br>
+                                        <small>AWS Community Builder<br>@AWS</small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="spk_itm flex-it">
+                                <div class="prod_im"><img style="transform:scale(4);position:absolute;top:70px;right:35px;" src="./images/speakers/ray-lin.jpg" alt="Ray Lin"></div>
+                                <div class="namenid">
+                                    <p>
+                                        <b>Ray Lin</b>
+                                        <br>
+                                        <small>CEO<br>@iFUS System Consultant Ltd.</small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="spk_itm flex-it">
+                                <div class="prod_im"><img style="transform:scale(1.2);position:absolute;top:7px;" src="./images/speakers/cliff-lu.jpg" alt="Cliff Lu"></div>
+                                <div class="namenid">
+                                    <p>
+                                        <b>Cliff Lu</b>
+                                        <br>
+                                        <small>AWS Community Hero<br>@AWS</small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="spk_itm flex-it">
+                                <div class="prod_im"><img style="transform:scale(3.3);position:absolute;top:5px;right:35px;" src="./images/speakers/franky-chen.jpeg" alt="Franky Chen"></div>
+                                <div class="namenid">
+                                    <p>
+                                        <b>Franky Chen</b>
+                                        <br>
+                                        <small>Professional Services Consultant<br>@AWS</small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="spk_itm flex-it">
+                                <div class="prod_im"><img src="./images/speakers/jaffer-li.jpg" alt="Jaffer Li"></div>
+                                <div class="namenid">
+                                    <p>
+                                        <b>Jaffer Li</b>
+                                        <br>
+                                        <small>Solution Architect<br>@Trend Micro</small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="spk_itm flex-it">
+                                <div class="prod_im"><img src="./images/speakers/brian-hu.jpeg" alt="Brian Hu"></div>
+                                <div class="namenid">
+                                    <p>
+                                        <b>Brian Hu</b>
+                                        <br>
+                                        <small>Software Engineer<br>@EMQ</small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="spk_itm flex-it">
+                                <div class="prod_im"><img style="transform:scale(1.5);position:absolute;top:10px;" src="./images/speakers/clay-lu.jpg" alt="Clay Lu"></div>
+                                <div class="namenid">
+                                    <p>
+                                        <b>Clay Lu</b>
+                                        <br>
+                                        <small>SRE Engineer<br>@Cherri Tech</small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="spk_itm flex-it">
+                                <div class="prod_im"><img style="transform:scale(4);position:absolute;top:30px;left:8px;" src="./images/speakers/eric-juan.jpeg" alt="Eric Juan"></div>
+                                <div class="namenid">
+                                    <p>
+                                        <b>Eric Juan</b>
+                                        <br>
+                                        <small>Co-founder<br>@台灣天氣股份有限公司</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Volunteers Area -->
+        <div class="section-6 inv" id="volunteers">
+            <div class="container">
+                <div class="volunteers">
+                    <h4 class="main-heading-ttl text-center">志工夥伴</h4>
+                    <div class="vl-row-list">
+                        <div class="vl-i  flex-it hcenter">
+                            <div class="person" data-fname="Wyne Tan" data-lname="總召 | 公關部長">
+                                <div class="img">
+                                    <a target="_blank" href="https://www.linkedin.com/in/tan-wei-jie-wyne-5b27b9156/">
+                                        <i class="icon large ion-logo-linkedin"></i>Wyne Tan</a>
+                                </div>
+                            </div>
+                        
+                            <div class="person" data-fname="Rickie Lu" data-lname="副召 | 財政部長">
+                                <div class="img">
+                                    <a target="_blank" href="https://www.linkedin.com/in/rickielu/">
+                                        <i class="icon large ion-logo-linkedin"></i>Rickie Lu</a>
+                                </div>
+                            </div>
+                        
+                            <div class="person" data-fname="Kathy Lee" data-lname="設計部長">
+                                <div class="img">
+                                    <a target="_blank" href="https://m.facebook.com/sugakeyk">
+                                        <i class="icon large ion-logo-facebook"></i>Kathy Lee</a>
+                                </div>
+                            </div>
+                        
+                            <div class="person" data-fname="Anna Wu" data-lname="行銷部長">
+                                <div class="img">
+                                    <a target="_blank" href="https://www.linkedin.com/in/annawu-ds">
+                                        <i class="icon large ion-logo-linkedin"></i>Anna Wu</a>
+                                </div>
+                            </div>
+                        
+                            <div class="person" data-fname="Clay Lu" data-lname="機動部長">
+                                <div class="img">
+                                    <a target="_blank" href="https://www.linkedin.com/in/clay-lue-a8b9527a">
+                                        <i class="icon large ion-logo-linkedin"></i>Clay Lu</a>
+                                </div>
+                            </div>
+                        
+                            <div class="person" data-fname="Allen Hsieh" data-lname="機動副部長">
+                                <div class="img">
+                                    <a target="_blank" href="https://www.linkedin.com/in/chang-lin-hsieh/">
+                                        <i class="icon large ion-logo-linkedin"></i>Allen Hsieh</a>
+                                </div>
+                            </div>
+                        
+                            <div class="person" data-fname="Cliff Lu" data-lname="Track A 議程隊長">
+                                <div class="img">
+                                    <a target="_blank" href="https://www.linkedin.com/in/cliff-chao-kuan-lu">
+                                        <i class="icon large ion-logo-linkedin"></i>Cliff Lu</a>
+                                </div>
+                            </div>
+                        
+                            <div class="person" data-fname="Ernest Chiang" data-lname="Track B 議程隊長">
+                                <div class="img">
+                                    <a target="_blank" href="https://twitter.com/dwchiang">
+                                        <i class="icon large ion-logo-twitter"></i>Ernest Chiang</a>
+                                </div>
+                            </div>
+                        
+                            <div class="person" data-fname="Franky Chen" data-lname="Track C 議程隊長">
+                                <div class="img">
+                                    <a target="_blank" href="https://www.linkedin.com/in/franky920920/">
+                                        <i class="icon large ion-logo-linkedin"></i>Franky Chen</a>
+                                </div>
+                            </div>
+                        
+                            <div class="person" data-fname="Dino Chou" data-lname="行銷組員">
+                                <div class="img">
+                                    <a target="_blank" href="https://www.linkedin.com/in/dino-chou-6b5840243">
+                                        <i class="icon large ion-logo-linkedin"></i>Dino Chou</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Subscribe Area -->
+        <div class="section section-7" id="subscribe">
+            <div class="container">
+                <div class="sponsors">
+                    <div class="foot-fk">
+                        <h4 class="main-heading-ttl">SHOW YOUR INTEREST</h4>
+                        <div class="row flex-it vcenter">
+                            <div class="col-md-12">
+                                <!-- sharing buttons -->
+                                <div class="sharethis-inline-share-buttons"></div>
+                            </div>
+                        </div>
+                        <p class="text-center hide">
+                            <small>請詳讀 AWS Community Day Taiwan 的<a href="./code-of-conduct.html" target="_blank">活動條款</a>！</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Min. Windows Floating Toast -->
+    <div class="floating_toast">
+        <a href="#home">關於 AWS Community Day</a>
+    </div>
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        ×
+                    </button>
+                </div>
+                <!-- <div class="modal-body">
+                    <iframe src="" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen"
+                        msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen"
+                        webkitallowfullscreen="webkitallowfullscreen"></iframe>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Google Map Location -->
+    <script type="text/javascript">
+        var latt = 25.0492625;
+        var lngg = 121.5815909;
+        var venue = "臺北方舟 ARK";
+
+        function setCoords(latt, lngg, venue) {
+            this.latt = latt;
+            this.lngg = lngg;
+            this.venue = venue;
+            console.log("clicked");
+            initMap();
+            $(this).addClass("hello");
+        }
+        function initMap() {
+            var uluru = { lat: latt, lng: lngg };
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: uluru,
+                scrollwheel: false
+            });
+            var markerIcon = {
+                url: "https://image.flaticon.com/icons/svg/252/252025.svg",
+                scaledSize: new google.maps.Size(50, 50),
+                origin: new google.maps.Point(0, 0),
+                anchor: new google.maps.Point(32, 65),
+                labelOrigin: new google.maps.Point(25, 70)
+            };
+            var markerLabel = venue;
+            var marker = new google.maps.Marker({
+                map: map,
+                animation: google.maps.Animation.DROP,
+                position: uluru,
+                icon: markerIcon,
+                disableDefaultUI: true,
+                label: {
+                    text: markerLabel,
+                    color: "#eb3a44",
+                    fontSize: "16px",
+                    fontWeight: "bold"
+                }
+            });
+        }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCX5uCCsOXAO64PTj7BH5dxzJEFoVF4jYI&callback=initMap"></script>
+</body>
+
+</html>
